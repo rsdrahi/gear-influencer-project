@@ -98,7 +98,7 @@
 
 .sponsor_container{
   max-width: 1110px;
-  margin: 0px auto;
+  margin: 70px auto;
   gap: 60px;
   /* border: 1px solid red; */
   padding: 30px 10px;
@@ -122,7 +122,7 @@
 #card_section{
   max-width: 1045px;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-top: 130px;
 }
 
@@ -136,17 +136,101 @@
 .card_container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: space-around;
+  justify-items: center;
   gap: 30px;
 }
 
+.card_info{
+  max-width: 329px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card_image img{
+  max-width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.card_description{
+  padding-left: 15px;
+}
+
+.card_title{
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+
+.card_price{
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.card_text{
+  max-width: 195px;
+}
+
+.see_more_button{
+  color: #E02C6D;
+  text-align: end;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+/* Feature */
+
+.feature{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1110px;
+  margin: 0px auto;
+  gap: 95px;
+}
+
+.feature_image img{
+  max-width: 404px;
+  object-fit: cover;
+}
+
+.feature_text{
+  max-width: 600px;
+}
+
+.feature_title{
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 60px;
+  color: #0A0826;
+  margin-bottom: 16px;
+}
+
+.feature_description{
+  font-weight: 700;
+  line-height: 28px;
+  color: #6C6C6C;
+  margin-bottom: 16px;
+}
+
+.feature_button{
+  background-color: #E02C6D;
+  padding: 10px 24px;
+  margin-bottom: 20px;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 700;
+}
 
 /* Media query */
 
 @media screen and (max-width: 576px){
   .nav_bar, 
   .nav_menu,
-  .banner{
+  .banner, 
+  .card_container{
     flex-direction: column;
   }
 
@@ -154,7 +238,7 @@
     text-align: center;
   }
 
-  .banner{
+  .banner, .feature{
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
@@ -200,5 +284,26 @@
   gap: 20px;
   justify-items: center;
 }
- 
+
+.card_container{
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+}
+
+/* .card_info{
+  max-width: 100%;
+} */
+
+.card_image img{
+  max-width: 100%;
+}
+
+.feature_image img{
+  max-width: 100%;
+}
+
+.feature_title{
+  font-size: 1.5rem;
+}
+
 }
