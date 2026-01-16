@@ -332,14 +332,11 @@
 
 .feature_image img{
   max-width: 100%;
+   margin-bottom: 20px;
 }
 
 .feature_title{
   font-size: 1.5rem;
-}
-
-.footer_section{
-  max-width: 360px;
 }
 
 .footer_section{
