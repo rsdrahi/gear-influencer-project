@@ -222,6 +222,38 @@
   border: none;
   color: #FFFFFF;
   font-weight: 700;
+  margin-bottom: 100px;
+}
+
+/* Footer */
+
+.footer_section{
+  text-align: center;
+  max-width: 1366px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  background-color: #000000;
+}
+
+.footer_text{
+  color: #FFFFFF;
+  padding: 50px;
+}
+
+.footer_title{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.footer_description{
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 24px;
+  color: #D9DBE1;
+}
+
+.footer_text a{
+  color: #FFFFFF;
 }
 
 /* Media query */
@@ -304,6 +336,14 @@
 
 .feature_title{
   font-size: 1.5rem;
+}
+
+.footer_section{
+  max-width: 360px;
+}
+
+.footer_section{
+  max-width: 100%;
 }
 
 }
